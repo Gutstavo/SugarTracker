@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/body_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="10dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu="@menu/bottom_nav_menu"
+            app:itemIconSize="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@android:color/transparent"
+            app:elevation="0dp" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/navigation_tracker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/blue_grotto"
+        android:src="@drawable/ic_heart"
+        app:fabCustomSize="70dp"
+        app:layout_anchor="@id/bottomAppBar"
+        app:maxImageSize="30dp"
+        app:tint="@color/white" />
+
+    <View
+        android:id="@+id/circle"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/circle"
+        android:visibility="visible"
+        app:layout_anchor="@+id/navigation_tracker"
+        app:layout_anchorGravity="center" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

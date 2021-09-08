@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "462180820045",
+    "project_id": "sugartracker-d4e77",
+    "storage_bucket": "sugartracker-d4e77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462180820045:android:dc93068ec9041c5fd3e804",
+        "android_client_info": {
+          "package_name": "com.example.sugartracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462180820045-7kb2k4hl5lt3jt2j3in0ncqqd4kjk2do.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sugartracker",
+            "certificate_hash": "eac245df1eea6070bc5482cd914a808a8bafc5de"
+          }
+        },
+        {
+          "client_id": "462180820045-7m9ugm61u3i5nq0luuh5ndu0thnko4rp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2NAQGv2G8OG0WlY80cKWZ35bxt6sQOnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462180820045-7m9ugm61u3i5nq0luuh5ndu0thnko4rp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
