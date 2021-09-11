@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SugarTracker">
         <activity
+            android:name=".InsertAuto"
+            android:exported="true" />
+        <activity
+            android:name=".InsertManually"
+            android:exported="true" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true" />
         <activity
@@ -27,7 +33,6 @@
         <activity
             android:name=".LogoAnim"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,6 +45,10 @@
         <activity
             android:name=".DispositivosVinculados"
             android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

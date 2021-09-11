@@ -7,18 +7,92 @@
     android:background="@color/blue_grotto"
     tools:context=".TrackerActivity">
 
-    <Button
-        android:layout_width="125dp"
-        android:layout_height="78dp"
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/back"
-        android:background="@color/fui_transparent"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="131dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue_grotto"
         android:drawableLeft="@drawable/ic_arrow_back"
-        android:drawablePadding="-15sp"
-        android:paddingTop="32sp"
-        android:text="Back"
-        android:textColor="@color/navy_blue"
+        android:fontFamily="@font/montserrat"
+        android:paddingRight="30dip"
+        android:text="BACK"
+        android:textColor="@color/baby_blue"
+        android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="219dp"
+        android:layout_height="47dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Choose how you will insert your data"
+        android:textAlignment="center"
+        android:textColor="@color/baby_blue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.27" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/manually"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/montserrat"
+        android:text="Manually"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/auto"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="232dp"
+        android:backgroundTint="@color/white"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="16dp"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manually"
+        app:layout_constraintVertical_bias="0.826" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="58dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/montserrat"
+        android:text="OR"
+        android:textAlignment="center"
+        android:textColor="@color/baby_blue"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/auto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manually"
+        app:layout_constraintVertical_bias="0.466" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
